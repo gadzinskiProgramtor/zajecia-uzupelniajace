@@ -4,12 +4,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Queque {
-    private static Queque instance;
+    private static Queque instance = new Queque();
 
     public static Queque instanceOf(){
-        if(instance==null){
-            instance = new Queque();
-        }
+
         return instance;
     }
 
