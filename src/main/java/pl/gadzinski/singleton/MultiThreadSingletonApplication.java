@@ -24,7 +24,7 @@ public class MultiThreadSingletonApplication {
         thread3.start();
         thread4.start();
 
-        Thread.sleep(0);
+        Thread.sleep(100);
         System.out.println(countService.getCount());
     }
 }

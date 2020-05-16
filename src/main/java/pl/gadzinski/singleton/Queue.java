@@ -3,10 +3,10 @@ package pl.gadzinski.singleton;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Queque {
-    private static Queque instance = new Queque();
+public class Queue {
+    private static Queue instance = new Queue();
 
-    public static Queque instanceOf(){
+    public static Queue instanceOf(){
 
         return instance;
     }
@@ -14,7 +14,7 @@ public class Queque {
 
     private List<String> names;
 
-    public Queque() {
+    public Queue() {
         this.names = new LinkedList<>();
     }
 

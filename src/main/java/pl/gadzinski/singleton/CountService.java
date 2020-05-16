@@ -15,7 +15,7 @@ public class CountService {
 
     private Integer count=0;
 
-    public void increment() {
+    public synchronized void increment() {
         this.count =this.count +1;
     }
 

@@ -3,11 +3,13 @@ package pl.gadzinski.singleton;
 import java.util.LinkedList;
 import java.util.List;
 
-public enum QueueSingletonEnum {;
+public enum QueueSingletonEnum {
+    INSTANCE;
 
     private List<String> names;
 
-    QueueSingletonEnum(List<String> names) {
+
+    QueueSingletonEnum() {
         this.names = new LinkedList<>();
     }
 

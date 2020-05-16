@@ -2,17 +2,17 @@ package pl.gadzinski.singleton;
 
 public class SingletonApplication {
     public static void main(String[] args) {
-        Queque queque = new Queque();
-        Queque queque2 = new Queque();
-        queque.push("Damian");
-        queque.push("Tomek");
-        queque.push("Sebastian");
+        Queue queue = new Queue();
+        Queue queue2 = new Queue();
+        queue.push("Damian");
+        queue.push("Tomek");
+        queue.push("Sebastian");
 
-//        QueueSingletonEnum queueSingletonEnum = QueueSingletonEnum.;
+        QueueSingletonEnum queueSingletonEnum = QueueSingletonEnum.INSTANCE;
 
-        System.out.println(queque.pop());
-        System.out.println(queque.pop());
-        System.out.println(queque.pop());
-        System.out.println(queque.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
     }
 }
