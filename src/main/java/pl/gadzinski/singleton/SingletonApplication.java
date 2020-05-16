@@ -8,6 +8,8 @@ public class SingletonApplication {
         queque.push("Tomek");
         queque.push("Sebastian");
 
+//        QueueSingletonEnum queueSingletonEnum = QueueSingletonEnum.;
+
         System.out.println(queque.pop());
         System.out.println(queque.pop());
         System.out.println(queque.pop());

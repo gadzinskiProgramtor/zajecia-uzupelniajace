@@ -3,8 +3,8 @@ package pl.gadzinski.singleton;
 import java.util.LinkedList;
 import java.util.List;
 
-public enum QueueSingletonEnum {
-    ;
+public enum QueueSingletonEnum {;
+
     private List<String> names;
 
     QueueSingletonEnum(List<String> names) {
@@ -22,4 +22,6 @@ public enum QueueSingletonEnum {
             this.names.remove(0);
             return value;
         }
-}}
+}
+
+}
