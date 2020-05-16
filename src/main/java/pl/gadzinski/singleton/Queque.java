@@ -4,6 +4,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Queque {
+    private static Queque instance;
+
+    public static Queque instanceOf(){
+        if(instance==null){
+            instance = new Queque();
+        }
+        return instance;
+    }
+
+
     private List<String> names;
 
     public Queque() {
