@@ -2,12 +2,12 @@ package pl.gadzinski.singleton;
 
 public class MultiThreadSingletonApplication {
     public static void main(String[] args) throws InterruptedException {
-        CountService countService = CountService.instanceOf();
+//        CountService countService = CountService.instanceOf();
 
-        CountAction countAction = new CountAction(countService);
-        CountAction countAction2 = new CountAction(countService);
-        CountAction countAction3 = new CountAction(countService);
-        CountAction countAction4 = new CountAction(countService);
+        CountAction countAction = new CountAction();
+        CountAction countAction2 = new CountAction();
+        CountAction countAction3 = new CountAction();
+        CountAction countAction4 = new CountAction();
 
 //        countAction.run();
 //        countAction2.run();
@@ -24,7 +24,7 @@ public class MultiThreadSingletonApplication {
         thread3.start();
         thread4.start();
 
-        Thread.sleep(100);
-        System.out.println(countService.getCount());
+        Thread.sleep(300);
+        System.out.println(CountService.instanceOf().getCount());
     }
 }

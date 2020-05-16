@@ -6,8 +6,9 @@ public class CountService {
     private CountService() {
     }
 
-    public static CountService instanceOf(){
+    public synchronized static CountService instanceOf(){
         if(instance==null){
+            System.out.println("Created count service");
             instance = new CountService();
         }
         return instance;
