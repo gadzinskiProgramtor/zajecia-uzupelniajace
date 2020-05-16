@@ -9,9 +9,9 @@ public class QueuePrototype {
 
     {
         {
-            this.add(null);
-            this.add(null);
-            this.add(null);
+            this.add(new QueuePrototype());
+            this.add(new QueuePrototype());
+            this.add(new QueuePrototype());
         }
     };
 
