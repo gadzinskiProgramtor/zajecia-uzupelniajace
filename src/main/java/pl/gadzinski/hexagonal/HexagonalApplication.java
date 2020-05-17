@@ -7,8 +7,7 @@ import pl.gadzinski.hexagonal.infrastructure.textfile.ProductFromTextFileReposit
 
 public class HexagonalApplication {
     public static void main(String[] args) throws ProductAlreadyExistException {
-        ProductNotifier productNotifier = null;
-        ProductService productService = new ProductService(new ProductFromTextFileRepository(), productNotifier);
+        ProductService productService = new ProductService(new ProductFromTextFileRepository(), null);
         productService.addProduct(null,null,null,null);
     }
 }
