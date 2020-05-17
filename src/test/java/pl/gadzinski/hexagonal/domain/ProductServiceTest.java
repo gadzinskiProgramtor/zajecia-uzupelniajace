@@ -24,5 +24,18 @@ public class ProductServiceTest {
         Product expectedProduct = new Product(1L,name, description, category, weight);
         Assert.assertEquals("Product is different", expectedProduct,actualProduct);
     }
+    @Test(expected = ProductAlreadyExistException.class)
+    public void shouldThrowProductAlreadyExistExceptionWhileTryingToCreateProductWithSameName() throws ProductAlreadyExistException {
+        //given
+        ProductService productService = new ProductService(new FakeProductRepository());
+        String name = "product-1";
+        String description = "product-description";
+        ProductCategory category = ProductCategory.PHONE;
+        Double weight =1.8;
+        //when
+
+        productService.addProduct(name,description,category,weight);
+
+    }
 
 }
