@@ -14,7 +14,7 @@ public class EmergencyCenter {
         this.items = items;
     }
 
-    public void handlerRequewst(String value) {
+    public void handlerRequest(String value) {
         for(ChainItem item:items){
             if(item.test(value)){item.action(value);}
         }
